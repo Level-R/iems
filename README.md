@@ -52,11 +52,11 @@ C:\xampp\htdocs\iems
 ```
 
 ## 🗃️ Import the Database
--Open phpMyAdmin by visiting http://localhost/phpmyadmin.
+- Open phpMyAdmin by visiting http://localhost/phpmyadmin.
 
--Create a new database named: iems_database
--Click Import and select the SQL file located in your project folder:
--iems/database/iems_database.sql
+- Create a new database named: iems_database
+- Click Import and select the SQL file located in your project folder:
+- iems/database/iems_database.sql
 
 Click Go to import the database.
 
@@ -68,8 +68,8 @@ Make sure the database credentials match your XAMPP setup:
 ---
 
 ## ▶️ Run the Project
-  -1. Start Apache and MySQL from the XAMPP Control Panel.
-  -2. Visit the project in your browser:
+- Start Apache and MySQL from the XAMPP Control Panel.
+- Visit the project in your browser:
 ```bash
 http://localhost/iems/
 ```
