@@ -51,7 +51,8 @@ Example:
 C:\xampp\htdocs\iems
 ```
 
-## 🗃️ Import the Database
+---
+### 3. 🗃️ Import the Database
 - Open phpMyAdmin by visiting http://localhost/phpmyadmin.
 
 - Create a new database named: iems_database
@@ -60,14 +61,15 @@ C:\xampp\htdocs\iems
 
 Click Go to import the database.
 
-## ⚙️ Configure Database Connection
+---
+### 4. ⚙️ Configure Database Connection
 Open the project folder:
 iems/config/db.php or similar database configuration file.
 
 Make sure the database credentials match your XAMPP setup:
----
 
-## ▶️ Run the Project
+---
+### 5. ▶️ Run the Project
 - Start Apache and MySQL from the XAMPP Control Panel.
 - Visit the project in your browser:
 ```bash
@@ -75,7 +77,7 @@ http://localhost/iems/
 ```
 
 ---
-## 🔐 Default Login Credentials
+### 6. 🔐 Default Login Credentials
 Use the following credentials to log in as an admin (update if changed in your database):
 ```bash
 Username: admin
@@ -83,8 +85,8 @@ Password: admin123456789
 ```
 🔒 For security, make sure to change default credentials after first login.
 
----
 
+---
 ## 🙋 Support
 For any queries or issues, feel free to contact the developer:
 
