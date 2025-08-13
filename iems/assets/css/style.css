@@ -1,0 +1,261 @@
+/* header front {h1-h6} */
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+/* body front {p, b, a, div, and others} */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-bold {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+/* body front {p, b, a, div, and others} */
+.roboto-body{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+/* Nav */
+#profile_btn .dropdown-item:focus, .dropdown-item:hover {
+    color: #232E57 !important;
+    background-color: #ffffff !important;
+}
+/* nav end */
+/* ====== Sidebar Layout ====== */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color: #232E57;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: width 0.5s ease;
+  z-index: 1;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* ====== Sidebar Links ====== */
+.sidebar a, .sidebar samp.dropdown-toggle,
+.sidebar .dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.sidebar a:hover,
+.sidebar .dropdown-toggle:hover {
+  background-color: #e4e2e2;
+  color: #232E57;
+}
+
+/* Active link */
+.sidebar a.active{
+  background-color: #ffffff;
+  color: #232E57;
+}
+.sidebar .dropdown-toggle.dropdown_active {
+  background-color: #14A44D;
+  color: #232E57;
+}
+/* Sidebar Icons */
+.sidebar i {
+  width: 30px;
+  text-align: center;
+}
+
+/* ====== Sidebar Text (Link Label) ====== */
+.link-text {
+  display: inline-block;
+  white-space: nowrap;
+  opacity: 1;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: all 0.3s ease;
+}
+
+/* Collapsed sidebar hides text */
+.sidebar.collapsed .link-text {
+  opacity: 0;
+  transform: scaleX(0);
+  width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+/* ====== Sidebar Toggle Button ====== */
+#toggleSidebar {
+  position: absolute;
+  top: 10px;
+  left: 74px;
+  font-size: 24px;
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  transition: color 0.3s ease;
+}
+
+#toggleSidebar:hover {
+  color: #dc3545 !important;
+}
+
+/* ====== Main Content Area ====== */
+#main {
+  margin-left: 250px;
+  padding: 16px;
+  margin-top: 50px;
+  transition: margin-left 0.5s ease;
+}
+
+.sidebar.collapsed ~ #main {
+  margin-left: 70px;
+}
+
+/* ====== Dropdown Menu ====== */
+.sidebar-dropdown .dropdown-toggle i:last-child {
+  margin-left: auto;
+}
+
+.sidebar-dropdown .dropdown-content {
+  display: none;
+  flex-direction: column;
+  background-color: #1e274c;
+  /* padding-left: 20px; */
+}
+
+.sidebar-dropdown .dropdown-content a {
+  font-size: 18px;
+  padding: 8px 20px;
+}
+.sidebar .sidebar-dropdown .dropdown-content  i {
+  padding-left: 10px;
+}
+/* Show dropdown when open */
+.sidebar-dropdown.open .dropdown-content {
+  display: flex;
+}
+
+/* Hide dropdown text when collapsed */
+.sidebar.collapsed .dropdown-content .link-text {
+  display: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #232E57;
+    height: 100%;
+    padding-top: 60px;
+    overflow-x: hidden;
+    transition: width 0.4s ease;
+    z-index: 3;
+  }
+  .sidebar a {font-size: 16px;}
+  .sidebar samp.dropdown-toggle{
+    font-size: 16px;
+  }
+  .sidebar.active {
+    width: 200px;
+  }
+
+  #main {
+    margin-left: 0 !important;
+  }
+}
+@media screen and (max-width: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a,  .sidebar samp.dropdown-toggle{font-size: 14px;}
+    #main {
+    margin-top: 50px !important;
+  }
+
+}
+@media screen and (max-width: 425px) {
+    .sidebar {
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width: 375px) {
+
+  #main {
+    margin-top: 55px !important;
+  }
+    .sidebar {
+        padding-top: 60px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .sidebar {
+        padding-top: 60px;
+    }
+  #main {
+    margin-top: 70px !important;        
+  }
+}
+
+/* side bar cess end */
+/* Message style start*/
+.fade-message{
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 10px;
+}
+.fade-message.fade-out{
+  opacity: 0;
+}
+/* logo */
+#logo img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid #232E57;
+    transition: all 0.3s ease-in-out;
+}
+#logo img:hover{
+      border: 2px solid #fc5656;
+}
+/* important_link */
+
+.important_link{
+  background-color: #000957;
+}
+.important_link .card {
+    background-color: #F5F7FA;
+    transition: all 0.3s ease-in-out;
+}
+/* manage class */
+.classID a.nav-link.text-danger.active {
+  background-color: transparent;
+  color: #232E57;
+}
