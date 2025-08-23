@@ -81,7 +81,7 @@ http://localhost/iems/
 Use the following credentials to log in as an admin (update if changed in your database):
 ```bash
 Username: admin
-Password: admin123456789
+Password: 123456789
 ```
 🔒 For security, make sure to change default credentials after first login.
 
